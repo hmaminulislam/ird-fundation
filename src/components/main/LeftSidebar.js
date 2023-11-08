@@ -16,8 +16,8 @@ function LeftSidebar() {
   return (
     <div className="w-[480px] flex gap-6">
       {/* menu bar  */}
-      <div className="w-[100px] bg-white flex flex-col items-center py-8 rounded-[24px]">
-        <div className="pb-16">
+      <div className="w-[100px] bg-white flex flex-col gap-16 items-center py-8 rounded-[24px] h-[92.5vh] overflow-y-auto no-scrollbar">
+        <div className="">
           <Image src={DuyaIcon} width={50} height={50} alt="" />
         </div>
         <div className="flex flex-col items-center justify-center gap-4">
@@ -49,7 +49,7 @@ function LeftSidebar() {
       </div>
       {/* categories */}
       <div className="w-[350px]">
-        <h2 className="text-2xl mb-6">Duas Page</h2>
+        <h2 className="text-2xl mb-9">Duas Page</h2>
         <div className="bg-[#1FA45B] h-14 px-5 flex items-center justify-center rounded-t-[10px]">
           <p className="text-base font-[500] text-white mx-auto">Categories</p>
         </div>

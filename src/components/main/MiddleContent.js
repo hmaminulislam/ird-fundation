@@ -7,6 +7,7 @@ function MiddleContent() {
   return (
     <div className="w-[1015px]">
       <div className="flex items-center relative"></div>
+      {/* Search bar top  */}
       <form>
         <label className="relative block lg:w-[350px] ml-auto mb-5">
           <input
@@ -19,7 +20,8 @@ function MiddleContent() {
           </button>
         </label>
       </form>
-      <div>
+      {/* Dua start  */}
+      <div className="h-[92.5vh] overflow-y-auto">
         <div className="flex mb-5 flex-row bg-white rounded-[10px] px-5 py-4 justify-start items-center">
           <p className="leading-[25px]font-[400]">
             <span className="text-[#1FA45B] font-medium">Section: </span>{" "}
@@ -27,10 +29,10 @@ function MiddleContent() {
           </p>
         </div>
         <div>
-        <div className='flex flex-col gap-5'>
-        <DuaCardItem />
-        <DuaCardItem />
-        </div>
+          <div className="flex flex-col gap-5">
+            <DuaCardItem />
+            <DuaCardItem />
+          </div>
         </div>
       </div>
     </div>

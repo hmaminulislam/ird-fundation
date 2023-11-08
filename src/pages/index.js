@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={inter.className} >
-      <div className="max-w-[1880px] mx-auto pt-[40px]">
+      <div className="max-w-[1880px] mx-auto pt-[40px] px-7">
       <div className="flex justify-between lg:gap-6">
         <LeftSidebar/>
         <MiddleContent/>
