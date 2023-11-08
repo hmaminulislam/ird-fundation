@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchIcon from "../../assets/images/serach-icon.svg";
 import Image from 'next/image';
+import DuaCardItem from '../sub/DuaCardItem';
 
 function MiddleContent() {
   return (
@@ -24,6 +25,12 @@ function MiddleContent() {
             <span className="text-[#1FA45B] font-medium">Section: </span>{" "}
             Excellence of dua in the morning & evening
           </p>
+        </div>
+        <div>
+        <div className='flex flex-col gap-5'>
+        <DuaCardItem />
+        <DuaCardItem />
+        </div>
         </div>
       </div>
     </div>

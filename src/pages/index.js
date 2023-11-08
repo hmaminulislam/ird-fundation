@@ -7,11 +7,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="max-w-[1880px] mx-auto pt-[40px]">
+    <main className={inter.className} >
+      <div className="max-w-[1880px] mx-auto pt-[40px]">
       <div className="flex justify-between lg:gap-6">
         <LeftSidebar/>
         <MiddleContent/>
         <RightSidebar/>
+      </div>
       </div>
     </main>
   );
