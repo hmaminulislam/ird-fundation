@@ -10,7 +10,6 @@ import ReportIcon from '../../assets/images/report.svg';
 
 
 function DuaCardItem({ duaItem, index }) {
-  console.log(duaItem)
   const {
     top_en,
     dua_name_en,

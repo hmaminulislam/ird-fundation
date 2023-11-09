@@ -12,7 +12,9 @@ import RuqyahIcon from "../../assets/images/ruqyah.svg";
 import SupportIcon from "../../assets/images/support.png";
 import SearchIcon from "../../assets/images/serach-icon.svg";
 
-function LeftSidebar() {
+function LeftSidebar({data}) {
+  const {category} = data;
+  
   return (
     <div className="w-[480px] flex gap-6">
       {/* menu bar  */}
@@ -53,7 +55,6 @@ function LeftSidebar() {
         <div className="bg-[#1FA45B] h-14 px-5 flex items-center justify-center rounded-t-[10px]">
           <p className="text-base font-[500] text-white mx-auto">Categories</p>
         </div>
-
         <div className="pt-4 px-4 bg-white rounded-b-[10px]">
           <form>
             <label className="relative block w-full">
@@ -73,9 +74,8 @@ function LeftSidebar() {
               />
             </label>
           </form>
-          <div className="flex flex-col gap-2">
-            <CategoryItem />
-            <CategoryItem />
+          <div className="flex flex-col gap-2 h-[72vh] overflow-y-auto">
+            {category.map((cat, index) => <CategoryItem key={index} catItem={cat} data={data} />)}
           </div>
         </div>
       </div>
