@@ -59,8 +59,7 @@ function LeftSidebar({data}) {
           <form>
             <label className="relative block w-full">
               <span className="absolute inset-y-0 left-0 flex items-center pl-4">
-                <Image
-                  className="stroke-mute-grey"
+                <Image 
                   src={SearchIcon}
                   width={22}
                   height={22}
